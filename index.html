@@ -14,11 +14,10 @@
     /* Hint: What can you do with a media query and flexbox? */
 
     .pricing-container {
-      display: inline-flex;
+      display: flex;
       justify-content: center;
       align-items: center;
       height: 100vh;
-      margin-left: 350px;
       /*NOTE: This Height is very important, without this the containers were not centering about Y-axis even after justify-content and align-items center*/
       gap: 10px;
     }
@@ -63,7 +62,7 @@
     }
 
 
-    @media (max-width: 600px) {
+    @media (max-width: 480px) {
       .pricing-container {
         display: flex;
         flex-direction: column;
